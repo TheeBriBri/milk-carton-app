@@ -1,26 +1,2 @@
-@media screen and (max-width: 414px) {
-  .recentSingleChild {
-    width: 33vw;
-    height: 31vh;
-    margin: 0.4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* padding: 10px; */
-    /* background: red; */
-  }
-  .recentSingleChild img {
-    width: 30vw;
-    height: 20vw;
-    border: 5px solid rgb(73, 72, 72)
-  }
 
-}
-.recentSingleChild h4 {
-  margin: 0.5vh;
-  /* margin-top: 8px; */
-}
-.recentSingleChild p {
-  margin: 0.5vh;
-}
 

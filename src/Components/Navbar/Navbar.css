@@ -1,0 +1,32 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url('https://i.giphy.com/media/RHIKETUlUINYvV7CAO/giphy.webp');
+  background-size: cover;
+}
+.navbarTitle {
+  color: yellow;
+  font-family: HeadLineA;
+  font-size: 550%;
+  margin-bottom: -10%;
+  margin-top: 4%;
+}
+.headerContainer h6 {
+  color: white;
+  margin-top: 7%;
+  margin-bottom: 0%;
+  margin-left: 22%;
+  font-size: 105%;
+}
+
+.headerContainer img {
+  height: 82%;
+  width: 80%;
+  margin-left: 30%;
+  margin-top: -33%;
+  margin-bottom: -6%;
+}
+#newButton {
+  background-color: yellow;
+}

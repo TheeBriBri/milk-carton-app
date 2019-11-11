@@ -4,14 +4,27 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.6.0",
+    "@stardust-ui/docs-components": "^0.40.0",
+    "babel": "^6.23.0",
     "cors": "^2.8.5",
+    "faker": "^4.1.0",
+    "gulp-print": "^5.0.2",
     "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "mongodb": "^3.3.3",
+    "natives": "^1.1.6",
+    "prettier": "^1.19.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "typeface-roboto": "0.0.75"
+    "semantic": "0.0.1",
+    "semantic-ui": "^2.4.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1",
+    "typeface-roboto": "0.0.75",
+    "typescript": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",

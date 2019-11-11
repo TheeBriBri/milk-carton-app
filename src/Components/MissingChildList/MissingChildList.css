@@ -1,31 +1,85 @@
-/* @media screen and (max-width: 414px) { */
-  .missingChildListContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 70vh;
-    width: 74vw;
-    /* margin: 10px; */
-    margin-left: 15.8vw;
-    margin-top: 28.75vh;
-    overflow: scroll;
-    /* background: purple 2px; */
-  }
-  .missingChildFullDetailsContainer {
-    display: flex;
-    flex-direction: row;
-    height: 39vh;
-    width: 79vw;
-    margin-left: -1.3vw;
-    margin-top: 1vh;
-    position: fixed;
-  }
-  .missingChildMinDetailsContainer {
-    display: flex;
-    flex-direction: row;
-    height: 33vh;
-    overflow-y: scroll;
-    margin-top: 20.5vh;
-    position: inherit;
-  }
-/* } */
+.missingChildListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100vw;
+} 
+.headerBar {
+  display: flex;
+  flex-direction: row;
+  width: 99vw;
+  height: 7vh;
+  align-items: center;
+}
+.headerBarTitle{
+  margin-left: 20%;
+  margin-top: 3%;
+  font-family: HeadLineA;
+  font-size: 125%;
+}
+.missingChildList{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+  /* position: inherit; */
+} 
+.missingChildListTitle {
+  color: yellow;
+  font-family: HeadLineA;
+  font-size: 300%;
+  margin-top: 12%;
+  margin-left: 17%;
+  position: fixed;
+}
+.recentSingleKidList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  background-image: url('https://i.ytimg.com/vi/QuC8ABeUbbQ/maxresdefault.jpg');
+  background-size: contain;
+
+}
+.recentSingleKid1 {
+  margin-top: 28vh;
+}
+.recentSingleKid {
+  margin-top: 20vh;
+}
+.recentSingleKid img {
+  width: 16vw;  
+  height: 15vh;
+  margin: 2vw; 
+}
+.recentSingleKid1 img {
+  width: 16vw;  
+  height: 15vh;
+  margin: 2vw; 
+}
+
+.recentSingleKid h6 {
+  color: white;
+  margin-top:1vh;
+  margin-bottom: 1vh;
+}
+.recentSingleKid1 h6 {
+  color: white;
+  margin-top:1vh;
+  margin-bottom: 1vh;
+}
+.recentSingleKid h2 {
+  color: white;
+  font-size: 90%;
+  margin-top:1vh;
+  margin-bottom: 1vh;
+}
+.recentSingleKid1 h2 {
+  color: white;
+  font-size: 90%;
+  margin-top:1vh;
+  margin-bottom: 1vh;
+}
