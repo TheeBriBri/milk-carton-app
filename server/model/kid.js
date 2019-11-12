@@ -27,7 +27,8 @@ const missingKidsModel = new Schema ({
   ncmec_number: {type:Number},
   middle_name: {type:String},
   org_contact: {type:String},
-  found: {type:String}
+  found: {type:String},
+  location: {type:String}
 });
 
 

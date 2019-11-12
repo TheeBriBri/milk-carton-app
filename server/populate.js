@@ -1,4 +1,4 @@
-// const LostKids = require('./model/kid')
+const LostKids = require('./model/kid')
 const FoundKids = require('./model/kid')
 const request = require('request')
  
@@ -14,6 +14,7 @@ function populate (req,res) {
           delete child.agency_contact;
           delete child.org;
           delete child.country;
+          child.location = '';
           child.found = false;
           return child;
         }
@@ -36,14 +37,14 @@ function populate (req,res) {
 
 function asyncRequest (url, rej) {
   return new Promise((res) => {
-    request(url, (err, response, _) => {
+    request(url, (err, response, ) => {
       if (err) rej(err);
       res(response.statusCode === 404)
     })
   }) 
 }
 
-// Kids.deleteMany({}, function (err) {
+// LostKids.deleteMany({}, function (err) {
 //   console.log('Delete all kids')
 // })
 

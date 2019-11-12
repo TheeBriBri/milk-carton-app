@@ -12,16 +12,5 @@ exports.getLostKids = async (req, res) => {
   }
 }
 
-exports.getKidsByName = async (req, res) => {
-  try {
-    console.log(req.params)
-  //   const lostKids = await LostKids.find();
-  //   res.json(lostKids);
-  //   res.status(200);
 
-  } catch (error) {
-    console.log(error);
-    res.sendStatus(500);
-  }
-}
 

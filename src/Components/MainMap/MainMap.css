@@ -1,0 +1,16 @@
+.markerButton {
+  background: none;
+  border: none;
+  cursor: help;
+}
+
+.markerButton img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: help;
+}
+.mapboxgl-popup-content {
+  border-bottom-right-radius: 0;
+  width: 80%;
+}

@@ -11,9 +11,7 @@ export const getAllKids = () => {
   return fetchRequest('/lostKids');
 }
 
-export const getFoundKids = () => {
-  return fetchRequest('/foundKids');
-}
+
 
 // export const getOneKid = () => {
 //   return fetchRequest()

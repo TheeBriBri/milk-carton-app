@@ -4,8 +4,7 @@ var request = require('request');
 
 router.get('/lostKids', controller.getLostKids);
 
-router.get('/lostKids/:names', controller.getKidsByName);
-
+// router.post('/addKids', controller.addLostKid);
 module.exports = router;
 
 // http://www.missingkids.com/photographs/NCMC600818e1.jpg
