@@ -1,11 +1,44 @@
+.landing-page-wrapper {
+  background-image: url('https://i.giphy.com/media/RHIKETUlUINYvV7CAO/giphy.webp');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 1rem;
+  /* box-shadow: 0px 0px 4px #2c3c77; */
+  box-shadow: 0px 0px 8px 1px #2c3c7733;
+  border-radius: 5px;
+  margin-top: 1rem;
+ }
+
+ @media (min-width: 600px) {
+  .card {
+    padding: 1rem 2rem;
+  }
+}
+
+
+
+.footer-bar {
+  position: fixed;
+  bottom: 0;
+  margin-right: 1vw;
+}
+
 .headerContainer {
   display: flex;
   flex-direction: column;
-  width: 105vw;
-  height: 105vh;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
-  background-image: url('https://i.giphy.com/media/RHIKETUlUINYvV7CAO/giphy.webp');
-  background-size: cover;
 }
 .navbarTitle {
   color: yellow;
@@ -14,21 +47,29 @@
   margin-bottom: -10%;
   margin-top: 4%;
 }
-.headerContainer h6 {
+.landing-page-wrapper h6 {
   color: white;
-  margin-top: 7%;
-  margin-bottom: 0%;
   margin-left: 22%;
   font-size: 105%;
+  position: absolute;
+  top: -2vh;
 }
 
-.headerContainer img {
+img {
   height: 69%;
   width: 63%;
-  margin-left: 37%;
-  margin-top: -32%;
-  margin-bottom: 3%;
+  position: absolute;
+  right: 3vw;
+  bottom: 8vh;
+  /* margin-left: 37%;
+  margin-top: -40%;
+  margin-bottom: 1%; */
 }
 #newButton {
   background-color: yellow;
+}
+.titleBar {
+  position: fixed;
+  left: 2vw;
+  top: 9vh;
 }

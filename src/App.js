@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 // import { Container, Header, List, Image } from "semantic-ui-react"
 
-// import './App.css';
+import './App.css';
 import {getAllKids} from './ApiServices';
 import MissingChildList from './Components/MissingChildList/MissingChildList'
 import NavBar from './Components/Navbar/Navbar';
@@ -33,9 +33,7 @@ function App({ children }) {
             <Route path="/missing-children" render={(props) => <MissingChildList {...props} kids={kids} sortedKids={sortedKids}/>}/>
             <Route path="/details/:id" component={MissingChildFullDetails}></Route>
             <Route path="/form" component={MainForm}></Route>
-            <Route path="/statistics" component={MainMapContainer}></Route>
-
-
+            <Route path="/map" component={MainMapContainer}></Route>
           </Switch>
       </div>
     </Router>

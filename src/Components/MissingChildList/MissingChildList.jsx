@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment'
 import { useState } from 'react';
 import {  Modal, Menu, Sidebar, Segment, Button, Icon, Image } from "semantic-ui-react"
+import Counter from '/Users/TheeBriBri/Desktop/Codeworks/Solo Project/milk-carton-app/src/Components/Counter/Counter.jsx'
 
 import { Link } from "react-router-dom"
 import './MissingChildList.css'
@@ -35,50 +36,52 @@ function MissingChildList({kids, sortedKids, children}) {
             width='thin'
           >
             <Menu.Item as={Link} to="/">
-              <h2>Home</h2>
+              <h2 className='homeKey'>Home</h2>
             </Menu.Item>
-            <Menu.Item as={Link} to="/missing-children">
-            <h1>Missing Children</h1>
+            <Menu.Item as={Link} to="/form">
+            <h3 className='kidKeys'>Report a Child</h3>
             </Menu.Item>
-            <Menu.Item as={Link} to="/statistics">
-              <h4>Statistics</h4>
+            <Menu.Item as={Link} to="/map">
+              <h3 className='kidKeys'>Map</h3>
             </Menu.Item>
           </Sidebar>
+
           <Sidebar.Pusher>
-            <div className="missingChildList" >
+            <div class="missingChildList" >
               <div className= "recentSingleKidList">
-              <div className= "missingChildListTitle">Missing Children</div>
-                {kids.map((singleKid, position) => (
-                  position === 1 || position%2 ?
-                    <div className="recentSingleKid" >
-                      <Modal trigger={<img src={singleKid.photo} alt='Original'/>}>
-                        <Modal.Content image>
-                          <Image wrapped size='medium' src={singleKid.aged_photo} />
-                          <Modal.Description>
-                            <h1>{singleKid.first_name} {singleKid.last_name}</h1>
-                            <h3>{singleKid.circumstance}</h3>
-                          </Modal.Description>
-                        </Modal.Content>
-                      </Modal>
-                        <h2>{singleKid.first_name}</h2>
-                        <h6>{moment(singleKid.date).format("MMM Do YYYY")}</h6>
-                    </div> 
-                    : 
-                    <div className = {"recentSingleKid1"}>
-                      <Modal trigger={<img src={singleKid.photo} alt='Original'/>}>
-                        <Modal.Content image>
-                          <Image wrapped  size='medium' src={singleKid.aged_photo} />
-                          <Modal.Description>
-                            <h1>{singleKid.first_name} {singleKid.last_name}</h1>
-                            <h3>{singleKid.circumstance}</h3>
-                          </Modal.Description>
-                        </Modal.Content>
-                      </Modal>
+                <div className= "missingChildListTitle">Missing Children</div>
+                  {kids.map((singleKid, position) => (
+                    position === 1 || position%2 ?
+                      <div className="recentSingleKid" >
+                        <Modal trigger={<img src={singleKid.photo} alt='Original'/>}>
+                          <Modal.Content image>
+                            <Image wrapped size='medium' src={singleKid.aged_photo} />
+                            <Modal.Description>
+                              <h1>{singleKid.first_name} {singleKid.last_name}</h1>
+                              <h3>{singleKid.circumstance}</h3>
+                            </Modal.Description>
+                          </Modal.Content>
+                        </Modal>
                           <h2>{singleKid.first_name}</h2>
                           <h6>{moment(singleKid.date).format("MMM Do YYYY")}</h6>
-                    </div>
-                ))}
-              </div>
+                      </div> 
+                      : 
+                      <div className = {"recentSingleKid1"}>
+                        <Modal trigger={<img src={singleKid.photo} alt='Original'/>}>
+                          <Modal.Content image>
+                            <Image wrapped  size='medium' src={singleKid.aged_photo} />
+                            <Modal.Description>
+                              <h1>{singleKid.first_name} {singleKid.last_name}</h1>
+                              <h3>{singleKid.circumstance}</h3>
+                            </Modal.Description>
+                          </Modal.Content>
+                        </Modal>
+                            <h2>{singleKid.first_name}</h2>
+                            <h6>{moment(singleKid.date).format("MMM Do YYYY")}</h6>
+                      </div>
+                  ))}
+                </div>
+            <Counter></Counter>
             </div>
           </Sidebar.Pusher>
         </Sidebar.Pushable>

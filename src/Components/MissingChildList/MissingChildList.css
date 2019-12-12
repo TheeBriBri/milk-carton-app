@@ -12,11 +12,19 @@
   height: 7vh;
   align-items: center;
 }
+.homeKey {
+  font-size: 250%;
+  font-family: HeadLineA;
+}
+.kidKeys {
+  font-size: 150%;
+  font-family: HeadLineA;
+}
 .headerBarTitle{
-  margin-left: 20%;
+  margin-left: 17%;
   margin-top: 3%;
   font-family: HeadLineA;
-  font-size: 125%;
+  font-size: 150%;
 }
 .missingChildList{
   display: flex;
@@ -37,7 +45,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  height: 105vh;
+  height: 76vh;
   width: 105vw;
   overflow: scroll;
   background-image: url('https://i.ytimg.com/vi/QuC8ABeUbbQ/maxresdefault.jpg');

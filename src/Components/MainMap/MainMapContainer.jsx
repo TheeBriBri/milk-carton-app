@@ -64,7 +64,9 @@ export default function App() {
               setSelectedChild(null);
             }}
           >
-            <div>
+            <div className="mainPopups">
+              <img src={selectedChild.photo} alt="OG Child"></img>
+              <img src={selectedChild.aged_photo} alt="OG Child"></img>
               <h2>{selectedChild.first_name}</h2>
               <p>{selectedChild.circumstance}</p>
             </div>
